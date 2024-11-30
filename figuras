@@ -1,0 +1,13 @@
+import random
+valor_cartas = list(range(1,11)) + ['valete', 'dama', 'rei']
+naipes = ['ouros', 'copas', 'espadas', 'paus']
+cartas = ['coringa', 'coringa']
+
+for valor in valor_cartas:
+    for naipe in naipes:
+        carta = f'{valor} de {naipe}'
+        cartas.append(carta)
+
+print(cartas)
+random.shuffle(cartas)
+print(cartas)
